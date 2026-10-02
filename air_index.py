@@ -125,8 +125,8 @@ def main() -> int:
         help="print JSON instead of opening the dashboard",
     )
     parser.add_argument(
-        "--refresh", type=positive_interval, default=60, metavar="SECONDS",
-        help="dashboard refresh interval (default: 60 seconds)",
+        "--refresh", type=positive_interval, default=300, metavar="SECONDS",
+        help="dashboard refresh interval (default: 300 seconds / 5 minutes)",
     )
     parser.add_argument(
         "--terminal-id",

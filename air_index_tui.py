@@ -190,7 +190,7 @@ class AirQualityApp(App):
     """
 
     def __init__(
-        self, refresh_interval: int = 60,
+        self, refresh_interval: int = 300,
         terminal_id: str | None = None,
         terminal_code: str | None = None,
     ) -> None:

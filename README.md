@@ -28,7 +28,7 @@ stays responsive. Failed updates keep the last successful readings and display
 an error; automatic refresh continues.
 
 ```bash
-python air_index.py --refresh 30  # Refresh every 30 seconds (default: 60).
+python air_index.py --refresh 30  # Refresh every 30 seconds (default: 300 = 5 minutes).
 python air_index.py --json        # Original pretty JSON output; no dependencies needed.
 python air_index.py --terminal-id YOUR_TERMINAL_ID --terminal-code YOUR_TERMINAL_CODE
 python air_index.py --terminal-id YOUR_TERMINAL_ID --terminal-code YOUR_TERMINAL_CODE --json

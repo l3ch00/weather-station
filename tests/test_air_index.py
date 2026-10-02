@@ -85,7 +85,7 @@ class RequestTests(SyntheticSettings, unittest.TestCase):
                                 "--terminal-code", "TEST01APP"]):
             with patch("air_index_tui.AirQualityApp") as app:
                 self.assertEqual(air_index.main(), 0)
-        app.assert_called_once_with(refresh_interval=60, terminal_id="12345",
+        app.assert_called_once_with(refresh_interval=300, terminal_id="12345",
                                     terminal_code="TEST01APP")
         app.return_value.run.assert_called_once()
 
